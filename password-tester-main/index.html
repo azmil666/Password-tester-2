@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Strength Tester</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Password Strength Tester</h1>
+    <input
+      id="passwordInput"
+      type="password"
+      placeholder="Enter your password"
+    />
+    <button id="submitButton">Continue</button>
+    <div id="strength-feedback"></div>
+  </div>
+
+  <div id="transition-wave"></div>
+
+  <script src="wavetrans.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

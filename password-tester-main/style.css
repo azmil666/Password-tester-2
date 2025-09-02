@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  background: #1e1e1e;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00bcd4;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #e0e0e0;
+  max-width: 400px;
+  width: 90%;
+}
+
+.container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px #00bcd4;
+}
+
+/* Heading */
+.container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #00bcd4;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* Input */
+input[type="password"] {
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 2px solid #00bcd4;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+  background: #121212;
+  color: #e0e0e0;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="password"]:focus {
+  border-color: #00e5ff;
+  box-shadow: 0 0 12px #00e5ff;
+}
+
+input[type="password"]:hover {
+  border-color: #00bcd4;
+}
+
+/* Feedback Box */
+#strength-feedback {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #80deea;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#strength-feedback:hover {
+  color: #00e5ff;
+  transform: scale(1.05);
+}
+
+/* Button */
+button {
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #00bcd4;
+  color: #121212;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+}
+
+button:hover {
+  background-color: #00e5ff;
+}
+
+/* Transition Overlay */
+#transition-wave {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #004d40, #00695c);
+  z-index: 999;
+  transform: scaleY(0);
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 20px;
+    margin: 20px;
+  }
+
+  .container h1 {
+    font-size: 1.8rem;
+  }
+}
